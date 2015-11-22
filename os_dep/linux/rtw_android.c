@@ -226,6 +226,20 @@ exit_proc:
 }
 #endif /* PNO_SUPPORT */
 
+int strnicmp ( char *a, char *b, int len ) {
+	int i;
+	char cmp1,cmp2;
+	for ( i = 0; i < len; i ++ ) {
+		cmp1  = a[i] >= 65 && a[i] <= 90 ? a[i] + 32 : a[i];
+		cmp2  = b[i] >= 65 && b[i] <= 90 ? b[i] + 32 : b[i];
+		if ( cmp1 != cmp2 ) {
+			return 1;
+		}
+		
+	}
+	return 0;
+}
+
 int rtw_android_cmdstr_to_num(char *cmdstr)
 {
 	int cmd_num;
