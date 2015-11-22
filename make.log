@@ -1,0 +1,76 @@
+DKMS make.log for 8192cu-v4.0.2_9000.20130911 for kernel 4.1.13-1-ARCH (armv7l)
+Sat Nov 21 06:01:46 UTC 2015
+make ARCH=arm CROSS_COMPILE= -C /lib/modules/4.1.13-1-ARCH/build M=/var/lib/dkms/8192cu/v4.0.2_9000.20130911/build  modules
+make[1]: Entering directory '/usr/lib/modules/4.1.13-1-ARCH/build'
+  CC [M]  /var/lib/dkms/8192cu/v4.0.2_9000.20130911/build/core/rtw_cmd.o
+  CC [M]  /var/lib/dkms/8192cu/v4.0.2_9000.20130911/build/core/rtw_security.o
+  CC [M]  /var/lib/dkms/8192cu/v4.0.2_9000.20130911/build/core/rtw_debug.o
+  CC [M]  /var/lib/dkms/8192cu/v4.0.2_9000.20130911/build/core/rtw_io.o
+  CC [M]  /var/lib/dkms/8192cu/v4.0.2_9000.20130911/build/core/rtw_ioctl_query.o
+  CC [M]  /var/lib/dkms/8192cu/v4.0.2_9000.20130911/build/core/rtw_ioctl_set.o
+  CC [M]  /var/lib/dkms/8192cu/v4.0.2_9000.20130911/build/core/rtw_ieee80211.o
+  CC [M]  /var/lib/dkms/8192cu/v4.0.2_9000.20130911/build/core/rtw_mlme.o
+  CC [M]  /var/lib/dkms/8192cu/v4.0.2_9000.20130911/build/core/rtw_mlme_ext.o
+  CC [M]  /var/lib/dkms/8192cu/v4.0.2_9000.20130911/build/core/rtw_wlan_util.o
+  CC [M]  /var/lib/dkms/8192cu/v4.0.2_9000.20130911/build/core/rtw_pwrctrl.o
+  CC [M]  /var/lib/dkms/8192cu/v4.0.2_9000.20130911/build/core/rtw_rf.o
+  CC [M]  /var/lib/dkms/8192cu/v4.0.2_9000.20130911/build/core/rtw_recv.o
+  CC [M]  /var/lib/dkms/8192cu/v4.0.2_9000.20130911/build/core/rtw_sta_mgt.o
+  CC [M]  /var/lib/dkms/8192cu/v4.0.2_9000.20130911/build/core/rtw_ap.o
+  CC [M]  /var/lib/dkms/8192cu/v4.0.2_9000.20130911/build/core/rtw_xmit.o
+  CC [M]  /var/lib/dkms/8192cu/v4.0.2_9000.20130911/build/core/rtw_p2p.o
+  CC [M]  /var/lib/dkms/8192cu/v4.0.2_9000.20130911/build/core/rtw_tdls.o
+  CC [M]  /var/lib/dkms/8192cu/v4.0.2_9000.20130911/build/core/rtw_br_ext.o
+  CC [M]  /var/lib/dkms/8192cu/v4.0.2_9000.20130911/build/core/rtw_iol.o
+  CC [M]  /var/lib/dkms/8192cu/v4.0.2_9000.20130911/build/core/rtw_sreset.o
+  CC [M]  /var/lib/dkms/8192cu/v4.0.2_9000.20130911/build/core/efuse/rtw_efuse.o
+  CC [M]  /var/lib/dkms/8192cu/v4.0.2_9000.20130911/build/hal/hal_intf.o
+  CC [M]  /var/lib/dkms/8192cu/v4.0.2_9000.20130911/build/hal/hal_com.o
+  CC [M]  /var/lib/dkms/8192cu/v4.0.2_9000.20130911/build/hal/dm.o
+  CC [M]  /var/lib/dkms/8192cu/v4.0.2_9000.20130911/build/hal/rtl8192c/rtl8192c_hal_init.o
+  CC [M]  /var/lib/dkms/8192cu/v4.0.2_9000.20130911/build/hal/rtl8192c/rtl8192c_phycfg.o
+  CC [M]  /var/lib/dkms/8192cu/v4.0.2_9000.20130911/build/hal/rtl8192c/rtl8192c_rf6052.o
+/var/lib/dkms/8192cu/v4.0.2_9000.20130911/build/hal/rtl8192c/rtl8192c_rf6052.c: In function 'PHY_RFShadowRefresh':
+/var/lib/dkms/8192cu/v4.0.2_9000.20130911/build/hal/rtl8192c/rtl8192c_rf6052.c:1020:37: warning: iteration 63u invokes undefined behavior [-Waggressive-loop-optimizations]
+    RF_Shadow[eRFPath][Offset].Value = 0;
+                                     ^
+/var/lib/dkms/8192cu/v4.0.2_9000.20130911/build/hal/rtl8192c/rtl8192c_rf6052.c:1018:3: note: containing loop
+   for (Offset = 0; Offset <= RF6052_MAX_REG; Offset++)
+   ^
+  CC [M]  /var/lib/dkms/8192cu/v4.0.2_9000.20130911/build/hal/rtl8192c/rtl8192c_dm.o
+  CC [M]  /var/lib/dkms/8192cu/v4.0.2_9000.20130911/build/hal/rtl8192c/rtl8192c_rxdesc.o
+  CC [M]  /var/lib/dkms/8192cu/v4.0.2_9000.20130911/build/hal/rtl8192c/rtl8192c_cmd.o
+  CC [M]  /var/lib/dkms/8192cu/v4.0.2_9000.20130911/build/hal/rtl8192c/usb/usb_halinit.o
+  CC [M]  /var/lib/dkms/8192cu/v4.0.2_9000.20130911/build/hal/rtl8192c/usb/rtl8192cu_led.o
+  CC [M]  /var/lib/dkms/8192cu/v4.0.2_9000.20130911/build/hal/rtl8192c/usb/rtl8192cu_xmit.o
+  CC [M]  /var/lib/dkms/8192cu/v4.0.2_9000.20130911/build/hal/rtl8192c/usb/rtl8192cu_recv.o
+  CC [M]  /var/lib/dkms/8192cu/v4.0.2_9000.20130911/build/hal/rtl8192c/usb/usb_ops_linux.o
+  CC [M]  /var/lib/dkms/8192cu/v4.0.2_9000.20130911/build/hal/rtl8192c/rtl8192c_sreset.o
+  CC [M]  /var/lib/dkms/8192cu/v4.0.2_9000.20130911/build/hal/rtl8192c/rtl8192c_xmit.o
+  CC [M]  /var/lib/dkms/8192cu/v4.0.2_9000.20130911/build/hal/rtl8192c/usb/Hal8192CUHWImg.o
+  CC [M]  /var/lib/dkms/8192cu/v4.0.2_9000.20130911/build/os_dep/osdep_service.o
+  CC [M]  /var/lib/dkms/8192cu/v4.0.2_9000.20130911/build/os_dep/linux/os_intfs.o
+/var/lib/dkms/8192cu/v4.0.2_9000.20130911/build/os_dep/linux/os_intfs.c:1013:22: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]
+  .ndo_select_queue = rtw_select_queue,
+                      ^
+/var/lib/dkms/8192cu/v4.0.2_9000.20130911/build/os_dep/linux/os_intfs.c:1013:22: note: (near initialization for 'rtw_netdev_ops.ndo_select_queue')
+  CC [M]  /var/lib/dkms/8192cu/v4.0.2_9000.20130911/build/os_dep/linux/usb_intf.o
+  CC [M]  /var/lib/dkms/8192cu/v4.0.2_9000.20130911/build/os_dep/linux/usb_ops_linux.o
+  CC [M]  /var/lib/dkms/8192cu/v4.0.2_9000.20130911/build/os_dep/linux/ioctl_linux.o
+  CC [M]  /var/lib/dkms/8192cu/v4.0.2_9000.20130911/build/os_dep/linux/xmit_linux.o
+  CC [M]  /var/lib/dkms/8192cu/v4.0.2_9000.20130911/build/os_dep/linux/mlme_linux.o
+  CC [M]  /var/lib/dkms/8192cu/v4.0.2_9000.20130911/build/os_dep/linux/recv_linux.o
+  CC [M]  /var/lib/dkms/8192cu/v4.0.2_9000.20130911/build/os_dep/linux/ioctl_cfg80211.o
+  CC [M]  /var/lib/dkms/8192cu/v4.0.2_9000.20130911/build/os_dep/linux/rtw_android.o
+/var/lib/dkms/8192cu/v4.0.2_9000.20130911/build/os_dep/linux/rtw_android.c: In function 'rtw_android_cmdstr_to_num':
+/var/lib/dkms/8192cu/v4.0.2_9000.20130911/build/os_dep/linux/rtw_android.c:233:11: error: implicit declaration of function 'strnicmp' [-Werror=implicit-function-declaration]
+   if(0 == strnicmp(cmdstr , android_wifi_cmd_str[cmd_num], strlen(android_wifi_cmd_str[cmd_num])) )
+           ^
+cc1: some warnings being treated as errors
+scripts/Makefile.build:258: recipe for target '/var/lib/dkms/8192cu/v4.0.2_9000.20130911/build/os_dep/linux/rtw_android.o' failed
+make[2]: *** [/var/lib/dkms/8192cu/v4.0.2_9000.20130911/build/os_dep/linux/rtw_android.o] Error 1
+Makefile:1384: recipe for target '_module_/var/lib/dkms/8192cu/v4.0.2_9000.20130911/build' failed
+make[1]: *** [_module_/var/lib/dkms/8192cu/v4.0.2_9000.20130911/build] Error 2
+make[1]: Leaving directory '/usr/lib/modules/4.1.13-1-ARCH/build'
+Makefile:584: recipe for target 'modules' failed
+make: *** [modules] Error 2
